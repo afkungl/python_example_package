@@ -1,0 +1,9 @@
+name: 240606_proj_example
+channels:
+  - main
+  - anaconda
+  - conda-forge
+  - intel
+  - defaults
+dependencies:
+  - python=3.12.3
