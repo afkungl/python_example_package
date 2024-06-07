@@ -7,6 +7,6 @@ class DiceSimulator:
 
         self.sides = sides
 
-    def throw_dice(self):
+    def throw(self):
 
         return np.random.randint(self.sides) + 1

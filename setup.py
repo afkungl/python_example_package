@@ -8,9 +8,11 @@ setup(
     name='python_example_package',
     version=ci_version,
     packages=find_packages() + [
-        "pep"
+        "pep",
+        "pep.games"
     ],
-    package_dir={"pep": "src/pep"},
+    package_dir={"pep": "src/pep",
+                 "pep.games": "src/pep/games"},
     author='Akos F Kungl',
     description='Example Package to start other packages from',
     url='https://github.com/afkungl/python_example_package',
