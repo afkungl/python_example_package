@@ -1,5 +1,3 @@
-
-
 class JustLine:
 
     def __init__(self, length):
@@ -24,4 +22,3 @@ class JustLine:
         if self.state_tile == self.length:
             print(f"You arrived at the final tile. The game has finished.")
             self.state_finished = True
-
