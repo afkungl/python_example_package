@@ -6,6 +6,7 @@ It uses the `pytest` framework to test various functions and classes of the pack
 
 from pep import version
 
+
 def test_loading_project():
     """
     Test loading the project

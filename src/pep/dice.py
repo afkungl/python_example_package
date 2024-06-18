@@ -4,6 +4,7 @@ This module provides a DiceSimulator class for simulating dice throws.
 
 import numpy as np
 
+
 class DiceSimulator:
     """
     A class for simulating dice throws.

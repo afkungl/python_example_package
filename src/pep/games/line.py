@@ -1,10 +1,10 @@
 """A module for playing the JustLine game."""
 
+
 class JustLine:
     """
     A class representing the JustLine game.
 
-    Attributes:
         length (int): The length of the line.
         state_tile (int): The current state of the player's tile.
         state_finished (bool): Whether the game has finished or not.
