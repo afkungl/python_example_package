@@ -9,3 +9,4 @@ dependencies:
   - python=3.12.3
   - pytest=8.2.2
   - pycodestyle=2.11.1
+  - pylint=3.2.3
