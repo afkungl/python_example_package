@@ -1,7 +1,14 @@
 import os
 from setuptools import setup, find_packages
+from distutils.util import convert_path
 
-ci_version = os.environ.get('BUILD_BUILDNUMBER', '0.0.1')
+# get the version from sourcecode
+main_ns = {}
+ver_path = convert_path('src/pep/version.py')
+with open(ver_path) as ver_file:
+    exec(ver_file.read(), main_ns)
+
+ci_version = os.environ.get('BUILD_BUILDNUMBER', main_ns['__version__'])
 
 
 setup(
