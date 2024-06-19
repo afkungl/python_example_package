@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'NGCM Surfacefigure measurement'
-copyright = '2024, Michael Stumpf, Akos Kungl, Eric Schwanke, Michal Kronenberg'
-author = 'Michael Stumpf, Akos Kungl, Eric Schwanke, Michal Kronenberg'
+project = 'Python Project Example'
+copyright = '2024, Akos F. Kungl'
+author = 'Akos F. Kungl'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,7 +28,8 @@ author = 'Michael Stumpf, Akos Kungl, Eric Schwanke, Michal Kronenberg'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.napoleon',
-              'sphinx.ext.autodoc']
+              'sphinx.ext.autodoc',
+              'sphinx.ext.intersphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
