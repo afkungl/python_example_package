@@ -10,3 +10,4 @@ dependencies:
   - pytest=8.2.2
   - pycodestyle=2.11.1
   - pylint=3.2.3
+  - sphinx=7.3.7
