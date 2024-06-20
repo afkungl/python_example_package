@@ -29,5 +29,10 @@ setup(
     install_requires=[
         'numpy==1.26.4',
         'pytest'
-    ]
+    ],
+    entry_points={
+        'console_scripts': [
+            'examplegame=pep.cl_entry:play_a_game'
+        ]
+    }
 )
