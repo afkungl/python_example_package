@@ -1,6 +1,9 @@
 # Example package for projects in Python
 A basic python package with sensible structure, logging, testing and documentation.
 
+[![Build and test](https://github.com/afkungl/python_example_package/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/afkungl/python_example_package/actions/workflows/python-app.yml)
+[![Linting](https://github.com/afkungl/python_example_package/actions/workflows/linting.yml/badge.svg?branch=main)](https://github.com/afkungl/python_example_package/actions/workflows/linting.yml)
+[![Stylecheck](https://github.com/afkungl/python_example_package/actions/workflows/stylecheck.yml/badge.svg?branch=main)](https://github.com/afkungl/python_example_package/actions/workflows/stylecheck.yml)
 
 # Getting Started
 
