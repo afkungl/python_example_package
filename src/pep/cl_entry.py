@@ -8,8 +8,8 @@ from pep.dice import DiceSimulator
 from pep.games.line import JustLine
 from pep.applogger import setup_logging
 
-
 logger = logging.getLogger("PlayApp")
+
 
 def play_a_game():
     """

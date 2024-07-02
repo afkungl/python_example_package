@@ -2,6 +2,7 @@
 
 from pep.games import logger
 
+
 class JustLine:
     """
     A class representing the JustLine game.

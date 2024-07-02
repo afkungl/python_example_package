@@ -8,6 +8,7 @@ import numpy as np
 
 logger = logging.getLogger(__name__)
 
+
 class DiceSimulator:
     """
     A class for simulating dice throws.
