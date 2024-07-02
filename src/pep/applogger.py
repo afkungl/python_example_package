@@ -101,6 +101,10 @@ LOG_RECORD_BUILTIN_ATTRS = {
 
 
 class MyJSONFormatter(logging.Formatter):
+    """
+        Formatter to create a json file
+    """
+
     def __init__(
             self,
             *,
@@ -111,10 +115,20 @@ class MyJSONFormatter(logging.Formatter):
 
     @override
     def format(self, record: logging.LogRecord) -> str:
+        """
+            Format logging record into json
+        :param record:
+        :return: json string
+        """
         message = self._prepare_log_dict(record)
         return json.dumps(message, default=str)
 
     def _prepare_log_dict(self, record: logging.LogRecord):
+        """
+            Prepare the log record into a dictionary
+        :param record:
+        :return:
+        """
         always_fields = {
             "message": record.getMessage(),
             "timestamp": dt.datetime.fromtimestamp(
@@ -143,12 +157,20 @@ class MyJSONFormatter(logging.Formatter):
 
 
 class NonErrorFilter(logging.Filter):
+    """
+        Example for a custom filter that only keeps INFO and DEBUG messages
+    """
+
     @override
     def filter(self, record: logging.LogRecord) -> bool | logging.LogRecord:
         return record.levelno <= logging.INFO
 
 
 def setup_logging():
+    """
+        Setup the logging configuration
+    :return:
+    """
 
     logging.config.dictConfig(config)
     queue_handler = logging.getHandlerByName("queue_handler")
