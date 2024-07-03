@@ -2,7 +2,11 @@
 This module provides a DiceSimulator class for simulating dice throws.
 """
 
+import logging
+
 import numpy as np
+
+logger = logging.getLogger(__name__)
 
 
 class DiceSimulator:
@@ -21,6 +25,7 @@ class DiceSimulator:
             sides (int): The number of sides on the dice.
         """
         self.sides = sides
+        logger.info("DiceSimulator initialized with %s sides", sides)
 
     def throw(self) -> int:
         """
@@ -29,4 +34,6 @@ class DiceSimulator:
         Returns:
             int: A random integer between 1 and the number of sides on the dice.
         """
-        return np.random.randint(self.sides) + 1
+        throw_res = np.random.randint(self.sides) + 1
+        logger.info("Throw result: %s", throw_res)
+        return throw_res
